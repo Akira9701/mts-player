@@ -1,3 +1,5 @@
+@import url(./assets/styles/player.css);
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -70,77 +72,3 @@ button:focus-visible {
 
 
 
-.video-container{
-  width: 600px;
-  height: auto;
-}
-
-.audio-container{
-  /* display: none; */
-}
-
-.audio-container .video-js .vjs-control-bar{
-  display: flex;
-  width: fit-content;
-  position: relative;
-}
-
-.audio-container .video-js .vjs-play-control{
-  display: none;
-}
-
-.audio-container .video-js .vjs-progress-control{
-  display: none;
-}
-
-.audio-container .video-js .vjs-remaining-time{
-  display: none;
-}
-
-.audio-container .video-js .vjs-fullscreen-control{
-  display: none;
-}
-
-.audio-container .video-js{
-  width: fit-content;
-}
-
-.audio-container .video-js.vjs-layout-tiny .vjs-volume-control{
-  display: block;
-}
-
-.audio-container .vjs-big-play-button{
-  display: none;
-}
-
-.audio-container .vjs-text-track-display{
-  display: none;
-}
-
-.audio-container .vjs-fluid:not(.vjs-audio-only-mode){
-  padding-top: 0%;
-}
-
-
-.video-container{
-  margin-bottom: 10px;
-}
-
-.audio-container .video-js .vjs-volume-panel:focus .vjs-volume-control.vjs-volume-horizontal{
-  width: 7em;
-}
-
-.audio-container .video-js .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-hover{
-  width: 11em;
-}
-
-.audio_block{
-  display: flex;
-  align-items: center;
-}
-
-.audio_title{
-  padding: 0;
-  margin: 0;
-  margin-left: 10px;
-}

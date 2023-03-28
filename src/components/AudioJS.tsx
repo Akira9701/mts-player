@@ -2,14 +2,13 @@ import React from 'react';
 import videojs from 'video.js';
 import "video.js/dist/video-js.css";
 
-import { useVideoJS } from "react-hook-videojs";
 
 import 'video.js/dist/video-js.css';
 
-const AudioJS = ({ volume, time, options, onReady, status }) => {
+const AudioJS = ({ options, onReady, }) => {
   const videoRef = React.useRef(null);
   const playerRef = React.useRef(null);
-  console.log(status);
+  // console.log(status);  
   React.useEffect(() => {
 
     // Make sure Video.js player is only initialized once
@@ -53,22 +52,22 @@ const AudioJS = ({ volume, time, options, onReady, status }) => {
     };
   }, [playerRef]);
 
-  React.useEffect(() => {
-    const player = playerRef.current;
+  // React.useEffect(() => {
+  //   const player = playerRef.current;
 
-    status ? (player.currentTime(time + 0.1), player.play()) : player.pause();
+  //   status ? (player.currentTime(time + 0.1), player.play()) : player.pause();
 
-  }, [status])
+  // }, [status])
 
-  React.useEffect(() => {
-    const player = playerRef.current;
-    player.volume(volume);
-
-
-    console.log(volume)
+  // React.useEffect(() => {
+  //   const player = playerRef.current;
+  //   player.volume(volume);
 
 
-  }, [volume])
+  //   // console.log(volume)
+
+
+  // }, [volume])
 
 
 

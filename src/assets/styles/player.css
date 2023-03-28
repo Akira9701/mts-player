@@ -1,0 +1,141 @@
+.video-container{
+    width: 1200px;
+    height: auto;
+
+  }
+ 
+  .player_container{
+    position: relative;
+  }
+  
+
+  .progress-container{
+    width: 100%;
+    height: 9px;
+    background: white;
+    overflow: hidden;
+    border-radius: 100px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3)
+    ;
+  }
+  
+  .progress-line{
+    width: 0%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1)
+    ;
+    
+  }
+  
+  .audio-container{
+    display: none;
+  }
+ 
+  
+  
+  .buttons-block{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .player-panel{
+    width: 95%;
+    margin: 0 auto;
+    position:  absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+  }
+  
+
+
+  .play-button{
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .play-button img{
+    width: 100%;
+    height: 100%;
+  }
+  .buttons-block button{
+    padding: 0;
+    /* margin: 0; */
+    border-radius: 0;
+    outline: none;
+    background: none;
+
+  }
+
+  .buttons-block button:focus{
+    outline: none;
+  }
+  .buttons-block_left-wrap{
+    display: flex;
+  }
+
+  .volume-button{
+    margin-left: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    font-size: 20px;
+  }
+
+  .buttons-block .toggle-volume-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 19px;
+    font-size: 20px;
+    /* margin-left: 40px; */
+
+  }
+  .toggle-volume-button img{
+    width: 24px;
+    height: 19px;
+  }
+  .standart-volume, .comment-volume{
+    
+    margin-left: 40px;
+    display: flex;
+  }
+  .volume-buttons_wrap{
+    transition-duration: 0.3s;
+    display: flex;
+  }
+  
+  .volume-buttons_wrap-none{
+
+    display: none;
+  }
+  
+
+  .buttons-block_right-wrap button{
+    margin-left: 26px;
+    font-size: 20px;
+    padding: 4px;
+    /* display: flex; */
+    /* align-items: center; */
+    line-height: 1;
+  }
+
+  .buttons-block .rate-active{
+    border: solid 1px white;
+    border-radius: 4px;
+  }
