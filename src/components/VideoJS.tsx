@@ -62,17 +62,6 @@ const VideoJS = ({ options, onReady }: VjsProps) => {
 }
 
 export default React.memo(VideoJS, (prevProps, nextProps) => {
-  // if (prevProps.status === nextProps.status) {
 
-  //   return true;
-  // }
-  // else if (prevProps.volume !== nextProps.volume) {
-  //   console.log(545);
-
-  //   return false;
-  // }
-  // else {
-  //   return false;
-  // }
   return true
 })

@@ -24,7 +24,7 @@ function App() {
   // const [volume, setVolume] = useState(1);
   const playerRef = React.useRef<IPlayerCustom | null>(null);
   const audioRef = React.useRef<IPlayerCustom | null>(null);
-  const progressRef = React.useRef<HTMLElement | null>(null);
+  const progressRef = React.useRef<HTMLDivElement | null>(null);
 
   const videoJsOptions = {
     autoplay: false,
@@ -51,15 +51,8 @@ function App() {
     responsive: true,
     fluid: true,
     inactivityTimeout: 0,
-    // controlBar: {
-    //   volumePanel: {
-    //     inline: false
-    //   }
-    // },
-    // audioOnlyMode: true,
     sources: [{
       src: audio,
-      // type: 'video/mp4'
     }]
   };
 
@@ -91,7 +84,9 @@ function App() {
     });
 
     player.on('timeupdate', function () {
-      progressRef.current.children[0].style.width = String(player.currentTime() / player.duration() * 100) + "%";
+      if (progressRef.current !== null) {
+        (progressRef.current.children[0] as HTMLElement).style.width = String(player.currentTime() / player.duration() * 100) + "%";
+      }
       // console.log();
       // setStatus(false);
       // setTime(player.currentTime());
@@ -111,7 +106,7 @@ function App() {
 
   };
 
-  const handleAudioPlayerReady = (player) => {
+  const handleAudioPlayerReady = (player: IPlayerCustom) => {
     audioRef.current = player;
     // console.log(player)
     // You can handle player events here, for example:

@@ -8,7 +8,7 @@ interface IVolumeButton {
     type: string,
 }
 
-const ToggleVolumeButton = ({ type, volumeStatus, handleMuteVolume }) => {
+const ToggleVolumeButton = ({ type, volumeStatus, handleMuteVolume }: IVolumeButton) => {
     return (
         <button role={"mute or unmute " + (type === 'audio' ? 'audio' : 'comments')} className="toggle-volume-button" onClick={() => handleMuteVolume(type)}>
             {

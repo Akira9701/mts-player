@@ -1,5 +1,5 @@
 .video-container{
-    width: 1200px;
+    width: 1400px;
     height: auto;
 
   }
@@ -107,7 +107,7 @@
 
   }
   .toggle-volume-button img{
-    width: 24px;
+    width: 36px;
     height: 19px;
   }
   .standart-volume, .comment-volume{
