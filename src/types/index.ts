@@ -8,6 +8,7 @@ export interface VjsProps {
 	options: {
         autoplay?: boolean,
         responsive?: boolean,
+        
         fluid?: boolean,
         playbackRates?: Array<number>,
         controlBar?: {
